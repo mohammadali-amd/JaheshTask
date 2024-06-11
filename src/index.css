@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+   font-family: "Dana";
+   src: local("dana-light"),
+      url("./assets/fonts/dana/dana-light.ttf") format("truetype");
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: "Dana";
+   src: local("dana-medium"),
+      url("./assets/fonts/dana/dana-medium.ttf") format("truetype");
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: "Dana";
+   src: local("dana-semibold"),
+      url("./assets/fonts/dana/dana-semibold.ttf") format("truetype");
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: "Dana";
+   src: local("dana-extrabold"),
+      url("./assets/fonts/dana/dana-extrabold.ttf") format("truetype");
+   font-weight: 800;
+}
+
+body {
+   direction: rtl;
+   font-family: 'Dana', sans-serif;
+}
+
+/* Scroll Bar Start */
+/* width */
+::-webkit-scrollbar {
+   width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   @apply bg-slate-500;
+   /* border-radius: 1px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   @apply bg-slate-600
+}
+
+/* Scroll Bar End */
+
+/* Carousel Navigation */
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+   @apply bg-white rounded-full p-[16px] shadow-md hover:bg-slate-200 duration-300
+}
